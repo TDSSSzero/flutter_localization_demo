@@ -1,0 +1,34 @@
+{
+  "helloWorld": "Hello World!",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "name": "my name is {username}",
+  "@name": {
+    "placeholders": {
+      "username": {
+        "type": "String",
+        "example": "TDSSS"
+      }
+    }
+  },
+  "players": "{count, plural, =0{no players} =1{1 player} other{{count} players}}",
+  "@nWombats": {
+    "description": "A plural message",
+    "placeholders": {
+      "count": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  },
+  "pronoun": "{gender, select, male{he} female{she} other{they}}",
+  "@pronoun": {
+    "description": "A gendered message",
+    "placeholders": {
+      "gender": {
+        "type": "String"
+      }
+    }
+  }
+}
